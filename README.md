@@ -12,5 +12,5 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### Links
 
 - Solution URL: [solution url](https://www.frontendmentor.io/solutions/another-solution-for-blog-card-WTf49C4NmV)
-- Live Site URL: [card preview](https://ryichi0.github.io/blog-card-review/)
+- Live Site URL: [recipe page](https://ryichi0.github.io/recipe-landing-page/)
 
