@@ -99,7 +99,9 @@ section.bg-rose-50{
     padding: 1.5rem;
 }
 
-.bg-rose-50 h3{
+.bg-rose-50 p{
+    font-size: 1.2rem;
+    font-weight: var(--font-weight-600);
     color: var(--Ros-800);
 }
 
