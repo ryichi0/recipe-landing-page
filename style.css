@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+/* Default Colors */
+
+--White: hsl(0, 0%, 100%);
+
+--Stone-100: hsl(30, 54%, 90%);
+--Stone-150: hsl(30, 18%, 87%);
+--Stone-600: hsl(30, 10%, 34%);
+--Stone-900: hsl(24, 5%, 18%);
+
+--Brown-800: hsl(14, 45%, 36%);
+
+--Ros-800: hsl(332, 51%, 32%);
+--Rose-50: hsl(330, 100%, 98%);
+
+
+/* Default Typography */
+
+--font-family-heading : 'Young Serif';
+--font-family-paragraph : 'Outfit';
+
+--font-weight-700 : 700;
+--font-weight-600 : 600;
+--font-weight-400 : 400;
+
+--font-size-p : 16px;
+
+--line-height-p : 160%;
+--line-height-heading : 100%;
+
+
+/* Default Padding & Gap & Border Radius */
+--padding: 2.5rem;
+--bt-section-gap: 1.7rem;
+
+
+--border-radius: 25px;
+}
+
+body{
+    font-family: var(--font-family-paragraph);
+    font-size: var(--font-size-p);
+    font-weight: var(--font-weight-400);
+    line-height: var(--line-height-p);
+    color: var(--Stone-600);
+    padding: 0 0 var(--padding) 0;
+}
+
+h1, 
+h2{
+    font-family: var(--font-family-heading);
+    font-weight: var(--font-weight-400);
+    line-height: var(--line-height-heading);
+}
+
+h1{
+    font-size: 2.7rem;
+    color: black;
+}
+
+h2{
+    color: var(--Brown-800);
+}
+
+section,
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+main{
+    gap: var(--bt-section-gap);
+}
+
+section{
+    gap: var(--bt-section-gap);
+    width: 80%;
+    margin: 0 auto;
+}
+
+section.img-container{
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+section.bg-rose-50{
+    background-color: var(--Rose-50);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.bg-rose-50 h3{
+    color: var(--Ros-800);
+}
+
+.bold{
+    font-weight: var(--font-weight-700);
+}
+
+hr{
+    opacity: 0.5;
+}
+
+/* ul & ol Design */
+
+ul li,
+ol li{
+    margin-bottom: 0.8rem;
+    list-style-position: inside;
+}
+
+li::marker{
+    color: var(--Brown-800);
+
+}
+
+/* Table Design */
+
+table{
+    border-collapse: collapse;
+}
+
+td {
+    padding: 0.7rem 1.4rem;
+}
+
+td.bold{
+    color: var(--Brown-800);
+}
+
+table tr{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Desktop Design */
+
+@media screen and (min-width:768px) {
+    body{
+        background-color: bisque;
+        padding: var(--padding) 0;
+    }
+    main{
+        background-color: white;
+        width: 60%;
+        padding: var(--padding);
+        margin: 0 auto;
+        border-radius: 20px;
+    }
+    section{
+        width: 100%;
+    }
+    img{
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+}
