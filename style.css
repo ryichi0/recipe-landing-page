@@ -83,6 +83,7 @@ section{
     gap: var(--bt-section-gap);
     width: 80%;
     margin: 0 auto;
+
 }
 
 section.img-container{
@@ -152,6 +153,7 @@ table tr{
         padding: var(--padding) 0;
     }
     main{
+        min-width: 768px;
         background-color: white;
         width: 60%;
         padding: var(--padding);
