@@ -97,7 +97,7 @@ img{
 section.bg-rose-50{
     background-color: var(--Rose-50);
     border-radius: 10px;
-    padding: 1.5rem;
+    padding: 2rem;
 }
 
 .bg-rose-50 p{
@@ -119,7 +119,11 @@ hr{
 ul li,
 ol li{
     margin-bottom: 0.8rem;
-    list-style-position: inside;
+    list-style-position: outside;
+    padding-inline-start: 1rem;
+}
+ul, ol{
+    margin-inline-start: 1rem;
 }
 
 li::marker{
@@ -166,5 +170,9 @@ table tr{
     img{
         border-radius: 10px;
         margin-bottom: 1rem;
+    }
+    ul li,
+    ol li{
+        padding-inline-start: 2rem;
     }
 }
